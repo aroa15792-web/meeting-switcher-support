@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>隐私说明草稿 · 会议切换器（发布草稿）</title>
+<style>*{box-sizing:border-box}html{color-scheme:light}body{margin:0;background:#f4f6f8;color:#18212c;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75}a{color:#0753a3;text-underline-offset:3px}a:focus-visible{outline:3px solid #135fac;outline-offset:3px}main{max-width:900px;margin:0 auto;padding:30px 22px 64px}.draft{padding:18px 20px;border:2px solid #9a4b00;background:#fff3df;border-radius:12px;color:#6d3500}.draft strong{display:block;font-size:1.12rem}.meta{color:#425262;font-size:.94rem}header{padding:28px 0 8px}h1{font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.25;margin:12px 0}h2{font-size:1.25rem;line-height:1.4;margin:0 0 12px}section{background:white;border:1px solid #d8e0e7;border-radius:12px;padding:24px;margin:18px 0}p,ul,ol{margin:10px 0}ul,ol{padding-left:24px}nav{display:flex;gap:20px;flex-wrap:wrap}code{background:#edf2f6;border-radius:4px;padding:2px 5px;overflow-wrap:anywhere}footer{color:#425262;padding-top:16px;border-top:1px solid #d8e0e7}strong{font-weight:650}@media(max-width:520px){main{padding:18px 14px 40px}section{padding:18px}.draft{padding:15px}}</style>
+</head>
+<body>
+<main id="main-content">
+<div class="draft" role="note"><strong>发行准备中的说明页面</strong>网站已开始公开准备；App 尚未上架，暂无 iPad 商店安装链接。隐私说明仍待最终运营者姓名与数据处理审计确认，不能当作已生效的最终政策。</div>
+<header><p class="meta">会议切换器 · 个人开发者维护</p><h1>隐私说明草稿</h1><p class="meta">对照候选：1.0.0（Build 10）｜计划首发：中国大陆（CN）｜正式生效日期：待确认</p><nav aria-label="支持页面导航"><a href="index.html">首页</a><a href="support.html">使用与支持</a><a href="privacy.html">隐私说明草稿</a></nav></header>
+<section aria-labelledby="scope"><h2 id="scope">1. 适用范围与发布者</h2><p>本草稿说明独立辅助工具“会议切换器”自身的数据处理设计。页面发布者暂称“会议切换器开发者”，实际运营／法律责任主体仍待确认，不虚构公司或公司关系。</p><p>腾讯、飞书等原厂会议软件的账号、会议内容、录音录像和服务由相应提供方按各自政策处理。本 App 不替代原厂控制器，也不改变原有账号与配对。</p></section>
+<section aria-labelledby="local"><h2 id="local">2. 本机配置与设备身份</h2><p>管理员配置会议室名称、主机地址、SSH 端口、会控账号短名称、会议室编号及主机公钥，用于连接并核对本房主机。当前工程将这些连接设置保存在 iPad 本机的应用偏好设置中。</p><p>设备签名私钥保存在受保护的系统钥匙串中，不设为 iCloud 钥匙串同步，当前程序没有对外私钥导出接口。设备公钥可由管理员交给本房 Mac，用于受限会控命令授权。私钥不是支持人员需要的资料。</p></section>
+<section aria-labelledby="network"><h2 id="network">3. 连接与第三方边界</h2><p>用户发起检查或切换时，App 与管理员指定的 Mac 建立 SSH 连接，执行受限检查／会控命令并接收状态或错误。该流程可能涉及主机地址、公钥、会议室编号及命令结果；它不是任意公共主机远程 shell。</p><p>当前设计不依赖自研云端中转。是否能在商店声明“开发者不收集数据”，仍须对最终二进制、依赖 SDK 和真实网络行为审计后确认，不能仅凭隐私清单文件推断。</p><p>系统快捷指令可以调用 App Intents，再由 Open App 打开原厂控制器。这不赋予本 App 读取其他 App 会议内容、原厂密码或配对数据的权限。</p></section>
+<section aria-labelledby="demo"><h2 id="demo">4. 独立页面演示</h2><p>已实现入口：<strong>首页 → 关于与隐私 → 浏览演示页面</strong>。演示使用独立模型，演示自身不读写真实房间配置或钥匙串、不发起网络连接、不切真实房间。它不会全局禁用现有快捷指令。</p><p>目前仅记录实现与归档，不宣称运行验收通过。演示不等于已连接真实会议室，也不替代完整审核环境。</p></section>
+<section aria-labelledby="support-data"><h2 id="support-data">5. 诊断与支持资料</h2><p>错误文字、主机状态和截图可能带有网络或房间信息。联系支持前请遮盖不必要资料，不要发送密码、验证码、私钥或原厂配对码。</p><p>正式版本是否保存诊断记录、保存期限、是否有自动上传、支持资料的实际处理和删除机制，仍须对最终构建核对。因此本草稿不作“零日志”“绝不传输任何数据”等绝对声明。</p></section>
+<section aria-labelledby="rights"><h2 id="rights">6. 更新、撤销与删除</h2><p>管理员可更新本 App 的会议室连接设置。撤销某台 iPad 的自研主机控制权限时，应由 Mac 管理员只撤销该设备对应的受限公钥授权，不改变原厂配对或其他合法授权。</p><p><strong>设备私钥／配置的用户可执行删除流程、数据保留期限和请求受理机制仍待研发验证及最终责任主体确认。</strong>卸载 App 不应被承诺会清除全部系统钥匙串记录。</p></section>
+<section aria-labelledby="contact"><h2 id="contact">7. 联系与待完成事项</h2><p>支持及隐私联系邮箱见页尾。此邮箱已由用户指定为公开联系方式，但本页未测试邮件投递，也未虚构响应时限。</p><p>正式发布前还须补齐实际主体、生效日期、公开 HTTPS 地址、最终隐私／权限／依赖核对，以及中国大陆 App 备案和加密出口等适用材料。当前页面不能当作已生效或提交就绪的法律政策。</p></section>
+<footer><p>公开联系邮箱：<a href="mailto:2725360075@qq.com">2725360075@qq.com</a>。请勿发送密码、验证码、私钥、原厂配对码或完整未脱敏配置。</p><p>本 App 为独立辅助工具，未表示与腾讯、飞书或相关厂商存在官方合作或背书关系。中国大陆发行所需的适用合规资料仍待核实；非公开链接分发不代表豁免。本页为发行准备信息，不代表 App 已通过审核或发布。</p></footer>
+</main>
+</body>
+</html>

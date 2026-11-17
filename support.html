@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>使用与支持 · 会议切换器（发布草稿）</title>
+<style>*{box-sizing:border-box}html{color-scheme:light}body{margin:0;background:#f4f6f8;color:#18212c;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.75}a{color:#0753a3;text-underline-offset:3px}a:focus-visible{outline:3px solid #135fac;outline-offset:3px}main{max-width:900px;margin:0 auto;padding:30px 22px 64px}.draft{padding:18px 20px;border:2px solid #9a4b00;background:#fff3df;border-radius:12px;color:#6d3500}.draft strong{display:block;font-size:1.12rem}.meta{color:#425262;font-size:.94rem}header{padding:28px 0 8px}h1{font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.25;margin:12px 0}h2{font-size:1.25rem;line-height:1.4;margin:0 0 12px}section{background:white;border:1px solid #d8e0e7;border-radius:12px;padding:24px;margin:18px 0}p,ul,ol{margin:10px 0}ul,ol{padding-left:24px}nav{display:flex;gap:20px;flex-wrap:wrap}code{background:#edf2f6;border-radius:4px;padding:2px 5px;overflow-wrap:anywhere}footer{color:#425262;padding-top:16px;border-top:1px solid #d8e0e7}strong{font-weight:650}@media(max-width:520px){main{padding:18px 14px 40px}section{padding:18px}.draft{padding:15px}}</style>
+</head>
+<body>
+<main id="main-content">
+<div class="draft" role="note"><strong>发行准备中的说明页面</strong>网站已开始公开准备；App 尚未上架，暂无 iPad 商店安装链接。隐私说明仍待最终运营者姓名与数据处理审计确认，不能当作已生效的最终政策。</div>
+<header><p class="meta">会议切换器 · 个人开发者维护</p><h1>使用与支持</h1><p class="meta">对照候选：1.0.0（Build 10）｜计划首发：中国大陆（CN）｜正式生效日期：待确认</p><nav aria-label="支持页面导航"><a href="index.html">首页</a><a href="support.html">使用与支持</a><a href="privacy.html">隐私说明草稿</a></nav></header>
+<section aria-labelledby="purpose"><h2 id="purpose">会议切换器能做什么</h2><p>为“Mac 会议主机＋iPad 控制平板”配置本房受限控制连接，提供只读检查和可由系统快捷指令调用的会议系统切换动作。</p><p>员工入口是 <strong>iPadOS 辅助触控菜单 → 系统快捷指令 → App Intent → 系统 Open App</strong>。小白点由系统提供，不是本 App 绘制的跨 App 悬浮窗；本 App 不提供音视频会议服务，也不承诺永久后台常驻。</p></section>
+<section aria-labelledby="prepare"><h2 id="prepare">安装与使用条件</h2><ul><li>兼容的 iPad 与 Mac；当前 iPad 工程最低系统为 iPadOS 17。</li><li>Mac 需另行部署配套主机程序并授权本房 iPad 使用固定受限命令；程序公开下载地址、版本与校验信息尚待补齐。</li><li>原厂会议室大屏端与控制器已能各自正常使用，原厂账号与配对保持不变。</li><li>管理员按组织策略配置可达网络和主机身份核验，不开放任意 shell 或生产系统公网入口。</li><li>实际核验的系统、设备与原厂版本兼容清单尚待补齐。</li></ul></section>
+<section aria-labelledby="daily"><h2 id="daily">员工与管理员入口</h2><p>管理员依次完成“准备这台 iPad”“连接会议 Mac”“设置员工小白点”“检查与测试”。每台 iPad 使用自己的身份，每间房保留自己的配置，不复制其他房私钥。</p><p>快捷指令须先执行本 App 的后台切换动作，再执行系统 Open App 打开相应原厂控制器；不能倒置，不添加错误后继续或反复重试。</p><p>员工日常：<strong>小白点 → 会议室-腾讯／会议室-飞书 → 确认上一场会议、投屏、录制均已结束</strong>。失败或取消时应停止，不应继续打开目标控制器。</p></section>
+<section aria-labelledby="demo"><h2 id="demo">先浏览独立只读演示</h2><p>入口：<strong>首页 → 关于与隐私 → 浏览演示页面</strong>。演示自身不读写真实配置／钥匙串、不联网、不切真实房间，可关闭返回。</p><p>目前确认实现与归档，不宣称演示已运行验收。演示不代表房间连接、双端切换或完整审核环境已经通过，也不会全局禁用现有系统快捷指令。</p></section>
+<section aria-labelledby="faq"><h2 id="faq">常见问题</h2><p><strong>看不到小白点或动作：</strong>检查系统辅助触控、快捷指令配置及管理策略，不删除原厂配对排查。</p><p><strong>换网后连不上：</strong>管理员先核实本房主机地址与可达性，再只读检查。公钥或房间编号不匹配时停止，不忽略身份警告。</p><p><strong>电视已切到腾讯但 iPad 仍连接中：</strong>历史候选有第二轮需原厂“重试”的已知问题；本轮签名及页面材料没有证明其已修复。保留错误，不连续重复触发或解绑。</p></section>
+<section aria-labelledby="release"><h2 id="release">安装与发行状态</h2><p>计划申请苹果非公开列出 App，通过 App Store 专用链接分发；当前尚未申请获批，没有可用的 iPad 商店安装链接。</p><p>现有内部签名包只适用于已登记设备，不能直接安装到所有 iPad。Mac 部署工具已完成文件层验证，仍为 ad-hoc 签名，未做 Developer ID 公证；联系支持获取适用版本，不关闭系统保护。</p><p>每间会议室需独立配置并授权，现有腾讯／飞书原厂配对保持不变。正式发行前须完成真实设备验收。</p></section>
+<section aria-labelledby="contact"><h2 id="contact">联系支持</h2><p>本工具由个人开发者维护，正式运营者署名尚待本人确认。请通过页尾邮箱联系；支持服务时间和响应范围尚未承诺。</p><p>反馈可包含 App 版本／Build、系统版本、设备类型、操作步骤、错误码与必要脱敏截图。不要发送密码、验证码、私钥、原厂配对码或完整未脱敏配置。</p><p>本页作为公开支持信息准备；联系邮箱可用于反馈，正式商店材料仍待补齐。</p></section>
+<footer><p>公开联系邮箱：<a href="mailto:2725360075@qq.com">2725360075@qq.com</a>。请勿发送密码、验证码、私钥、原厂配对码或完整未脱敏配置。</p><p>本 App 为独立辅助工具，未表示与腾讯、飞书或相关厂商存在官方合作或背书关系。中国大陆发行所需的适用合规资料仍待核实；非公开链接分发不代表豁免。本页为发行准备信息，不代表 App 已通过审核或发布。</p></footer>
+</main>
+</body>
+</html>
